@@ -1,0 +1,30 @@
+.Exchange ul{
+    height: 0px;
+}
+
+.Exchange .slide-ex{
+    margin-top: 0px;
+    position: absolute;
+    width: 70px;
+    z-index: 15000;
+}
+ 
+.Exchange .slide-ex div{
+    text-align: left;
+    border: solid 1px #cccccc;
+    padding-left: 18px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.Exchange .slide-ex div:hover{
+   background-color: #cccccc;
+}
+.Exchange .slide-titl { 
+   width: 70px;
+   height: 30px;
+   background-color:#ffffff;
+   cursor: pointer;
+   z-index: 20000;
+   position: relative;
+}

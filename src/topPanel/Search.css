@@ -1,0 +1,36 @@
+.Search_img{
+    cursor: pointer;
+    color: black;
+    position: relative;
+    margin-left: -80px;
+    }
+.Search_img:hover{
+    cursor: pointer;
+    color: rgb(135, 135, 136);
+    
+}
+
+.Search_form button{
+   border: none;
+   background-color: #ffffff;
+   position: absolute;
+    margin-left: -30px;
+    margin-top: 1px;
+   
+}
+.fa-search{
+    font-size: 10pt;
+}
+.Search_form{
+    position: relative;
+   
+   
+}
+.Search_form input{
+    width: 30px;
+}
+.fa-times{
+    color:red;
+    cursor: pointer;
+    padding-left: 5px;
+}

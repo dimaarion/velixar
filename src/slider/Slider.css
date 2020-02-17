@@ -1,0 +1,45 @@
+.Slider{
+  
+    min-height: 650px;
+    width: 100%;
+    background-image: url('/img/holst.jpg');
+    overflow: hidden;
+}
+
+.Slider div {
+   
+    vertical-align: middle;
+    display: inline-block; 
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.Slider div img{
+     position: relative;
+     transition: 0.5s;
+     box-shadow:  -5px 5px 12px 5px #505050;
+     cursor: pointer;
+     
+}
+
+.Slider .img_descript{
+    position: absolute;
+    z-index: 15000;
+    background-color: #ffffff;
+    width: 200px;
+    height: auto;
+    margin-left: 5px;
+    opacity: 0;
+    /*transition: 2s;*/
+    margin-top: 0px;
+}
+.Slider div:hover .img_descript{
+   opacity: 1;
+    
+}
+
+
+
+
+
+

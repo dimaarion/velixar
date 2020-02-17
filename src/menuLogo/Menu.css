@@ -1,0 +1,50 @@
+.Menu{
+    position: relative;
+    z-index: 10000;
+    
+}
+
+.Menu ul{
+    margin-top: 10px;
+    padding: 0px;
+    
+}
+
+.Menu ul li{
+    display: table-cell;
+    position: relative;
+    list-style: none;
+    font-size: 12pt;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.Menu ul li a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+.Menu ul li ul{
+    height: auto;
+    position: absolute;
+    background-color: rgb(243, 241, 248);
+    margin: 0px;
+    width: auto;
+}
+.Menu ul li ul li{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    display: block;
+    width: auto;
+    height: 40px;
+}
+.Menu ul li ul li ul{
+    position: absolute;
+    background-color: forestgreen;
+}
