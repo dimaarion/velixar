@@ -1,6 +1,6 @@
 .Slider{
   
-    height: 650px;
+    min-height: 650px;
     width: 100%;
     background-image: url('/img/holst.jpg');
     overflow: hidden;
@@ -22,21 +22,18 @@
      
 }
 
-.Slider .img_descript{
+.Slider .description_img{
     position: absolute;
     z-index: 15000;
     background-color: #ffffff;
     width: 200px;
     height: auto;
     margin-left: 5px;
-    opacity: 0;
-    /*transition: 2s;*/
+    opacity: 1;
+    transition: 2s;
     margin-top: 0px;
 }
-.Slider div:hover .img_descript{
-   opacity: 1;
-    
-}
+
 
 
 

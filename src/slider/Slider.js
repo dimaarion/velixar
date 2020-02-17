@@ -1,56 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Slider.css'
+import Description_img from './Description_img'
 const Slider = (props) => {
+const [descript, Sdescript] = useState(0);
+const [descript_op, Sdescript_op] = useState(0);
+function opacity_sec_f() {
+let s = 0;
+const interval = setInterval(()=>{
+s = s + 0.5;
+Sdescript_op(s);
+if(s > 1){
+    clearInterval(interval)
+}
+},10)
+
+}
+
 
     return (
         <div>
             <div className="Slider text-center">
-                <div id="descr" style={{ marginLeft: props.descriptPosition.x + 'px', marginTop: props.descriptPosition.y - 200 + 'px' }} className="img_descript">
-                    <b>{props.descriptPosition.o}</b><br />500 usd
-                </div>
                 {
                     props.slider.map((x) =>
-                        <div style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} key={x.id}>
-                            <img
-                                onMouseEnter={(e) => {
-                                    const d = document.getElementById('descr');
-                                    d.style.opacity = 1
-                                    const s = e.target.style;
-                                    s.width = x.width / 3.5 + 'px';
-                                    s.height = x.height / 3.5 + 'px';
-                                    s.marginLeft = -15 + 'px';
-                                    s.zIndex = 8000;
-                                    s.marginTop = -15 + 'px';
-                                }}
-                                onMouseLeave={(e) => {
-                                    const s = e.target.style;
-                                    const d = document.getElementById('descr');
-                                    d.style.opacity = 0
-                                    s.width = x.width / 4 + 'px';
-                                    s.height = x.height / 4 + 'px';
-                                    s.marginLeft = 0 + 'px';
-                                    s.zIndex = 0;
-                                    s.marginTop = 0 + 'px';
-                                }}
-                                onPointerMove={(e) => {
-                                    const d = document.getElementById('descr');
-                                    let descr_width = e.screenX;
-                                    let d_width = d.clientWidth;
-                                    let sum_descr_d = descr_width + d_width;
-                                    let w, h;
-                                    h = e.screenY - 35;
-                                    w = descr_width - window.innerWidth / 10; 
-                                    console.log(w)
-                                    if (sum_descr_d > window.innerWidth) {
-                                        w = descr_width - d_width - 20;
-                                    } else {
-                                        w = descr_width - window.innerWidth / 10; 
-                                        console.log(window.innerWidth / 10)
-                                    }
-                                   
-                                    props.descriptPositions(w, h, x.id, props.product)
-                                }}
-                                style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} src={`${props.base_url}/img/slider/${x.img}`} />
+                        <div className = " text-center" style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} key={x.id}>
+                            <img onMouseOver = {()=>{Sdescript(x.id);opacity_sec_f();}} onMouseOut = {()=>{Sdescript(0);Sdescript_op(0);}} style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} src={`${props.base_url}/img/slider/${x.img}`} />
+                       { (descript == x.id)?<Description_img opasity_sec = {descript_op}/>:''}
+                        
                         </div>
                     )
                 }
