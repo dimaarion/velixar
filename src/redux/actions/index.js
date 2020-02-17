@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL:'http://velixar/api/getdb/',
+    baseURL:'http://velixar.project/api/getdb/',
     
 })
 

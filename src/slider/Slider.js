@@ -1,7 +1,7 @@
 import React from 'react'
 import './Slider.css'
 const Slider = (props) => {
-
+console.log(props.slider)
     return (
         <div>
             <div className="Slider text-center">
