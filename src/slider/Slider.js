@@ -1,7 +1,7 @@
 import React from 'react'
 import './Slider.css'
 const Slider = (props) => {
-console.log(props.slider)
+
     return (
         <div>
             <div className="Slider text-center">
@@ -38,15 +38,19 @@ console.log(props.slider)
                                     let d_width = d.clientWidth;
                                     let sum_descr_d = descr_width + d_width;
                                     let w, h;
-                                    h = e.screenY - 20;
+                                    h = e.screenY - 35;
+                                    w = descr_width - window.innerWidth / 10; 
+                                    console.log(w)
                                     if (sum_descr_d > window.innerWidth) {
                                         w = descr_width - d_width - 20;
                                     } else {
-                                        w = descr_width - 20;
+                                        w = descr_width - window.innerWidth / 10; 
+                                        console.log(window.innerWidth / 10)
                                     }
+                                   
                                     props.descriptPositions(w, h, x.id, props.product)
                                 }}
-                                style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} src={`http://velixar.ru/img/slider/${x.img}`} />
+                                style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} src={`${props.base_url}/img/slider/${x.img}`} />
                         </div>
                     )
                 }

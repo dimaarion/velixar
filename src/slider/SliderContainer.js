@@ -49,7 +49,7 @@ const SliderContainer = (props) => {
     ]
     return (
         <div className="container-fluid p-0">
-            <Slider product = {product}  descriptPosition={props.descriptPosition} descriptPositions={props.descriptPositions} slider={props.slider} />
+            <Slider base_url = {props.base_url} product = {product}  descriptPosition={props.descriptPosition} descriptPositions={props.descriptPositions} slider={props.slider} />
 
         </div>
     )
@@ -57,7 +57,8 @@ const SliderContainer = (props) => {
 
 const setPath = state => ({
     slider: state.slider,
-    descriptPosition: state.descriptPosition
+    descriptPosition: state.descriptPosition,
+    base_url:state.base_url
 })
 
 const toProps = dispatch => ({

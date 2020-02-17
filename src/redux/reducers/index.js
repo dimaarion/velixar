@@ -1,5 +1,10 @@
 import { combineReducers } from 'redux';
-import { array_obj } from '../actions';
+import { array_obj, inital_base_url } from '../actions';
+
+const base_url = (state = inital_base_url) => {
+return state;
+}
+
 const search = (state = false, action) => {
     switch (action.type) {
         case 'SEAR_TRUE':
@@ -65,6 +70,7 @@ export const reducerApp = combineReducers({
     exchange,
     menu,
     slider,
-    descriptPosition
+    descriptPosition,
+    base_url
 
 })

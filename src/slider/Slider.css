@@ -1,6 +1,6 @@
 .Slider{
   
-    min-height: 650px;
+    height: 650px;
     width: 100%;
     background-image: url('/img/holst.jpg');
     overflow: hidden;
