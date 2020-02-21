@@ -15,8 +15,6 @@ if(s > 1){
 },10)
 
 }
-
-
     return (
         <div>
             <div className="Slider text-center">
@@ -24,7 +22,7 @@ if(s > 1){
                     props.slider.map((x) =>
                         <div className = " text-center" style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} key={x.id}>
                             <img onMouseOver = {()=>{Sdescript(x.id);opacity_sec_f();}} onMouseOut = {()=>{Sdescript(0);Sdescript_op(0);}} style={{ width: x.width / 4 + 'px', height: x.height / 4 + 'px' }} src={`${props.base_url}/img/slider/${x.img}`} />
-                       { (descript == x.id)?<Description_img opasity_sec = {descript_op}/>:''}
+                       { (descript == x.id)?<Description_img  opasity_sec = {descript_op}/>:''}
                         
                         </div>
                     )

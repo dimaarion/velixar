@@ -13,38 +13,47 @@ const SliderContainer = (props) => {
         {
             id: 2,
             titl: 'Анурогнатус',
+            many:'200'
         },
         {
             id: 3,
             titl: 'Самураи',
+            many:'200'
         },
         {
             id: 4,
             titl: 'Самураи',
+            many:'200'
         },
         {
             id: 5,
             titl: 'Склеромокхлус',
+            many:'200'
         },
         {
             id: 6,
             titl: 'Крыса',
+            many:'200'
         },
         {
             id: 7,
             titl: 'Крыса',
+            many:'200'
         },
         {
             id: 8,
             titl: 'София',
+            many:'200'
         },
         {
             id: 9,
             titl: 'Цветы',
+            many:'200'
         },
         {
             id: 10,
             titl: 'Цветы',
+            many:'200'
         }
     ]
     return (
