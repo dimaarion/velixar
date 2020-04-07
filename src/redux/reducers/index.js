@@ -2,7 +2,11 @@ import { combineReducers } from 'redux';
 import { array_obj, inital_base_url } from '../actions';
 
 const base_url = (state = inital_base_url) => {
-return state;
+    return state;
+}
+
+const winWidth = ()=>{
+    return window.innerWidth;
 }
 
 const search = (state = false, action) => {
@@ -38,6 +42,7 @@ const slider = (state = [], action = undefined) => {
     switch (action.type) {
         case 'IMG_SLIDER':
             let arr = [];
+            // eslint-disable-next-line no-unused-vars
             for (const key in action.payload.data) {
                 if (action.payload.data.hasOwnProperty(key)) {
                     const element = action.payload.data[key];
@@ -54,7 +59,7 @@ const slider = (state = [], action = undefined) => {
 
 export const descriptPosition = (state = { x: '', y: '', p: '', o: '' }, action) => {
     if (action.type === 'DESCRIPT') {
-        let h, d;
+        let h;
         action.o.map((x) =>
             (x.id === action.p) ?
                 h = x.titl
@@ -71,6 +76,7 @@ export const reducerApp = combineReducers({
     menu,
     slider,
     descriptPosition,
-    base_url
+    base_url,
+    winWidth
 
 })

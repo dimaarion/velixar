@@ -8,7 +8,7 @@ const MenuLogoContainer = (props) => {
 
     useEffect(() => {
         props.menuNorm();
-    }, [])
+    }, [props])
   
    function menuPod(x) {
     return(
@@ -26,12 +26,12 @@ const MenuLogoContainer = (props) => {
    
    
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-sm-2">
+        <div className="container-fluid">
+            
+                
                     <div className="Logo">Velixar.ru</div>
-                </div>
-                <div className="col-sm" style = {{height: 50 + 'px'}}>
+               
+                <div className="container-fluid text-center" style = {{height: 50 + 'px'}}>
                     <div className="Menu">
                         <ul>
                             {
@@ -49,7 +49,7 @@ const MenuLogoContainer = (props) => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            
         </div>
     )
 }

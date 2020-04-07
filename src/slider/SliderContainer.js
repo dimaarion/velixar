@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { imgSlider } from '../redux/actions'
 import { connect } from 'react-redux'
-import Slider from './Slider'
 
 const SliderContainer = (props) => {
 
@@ -9,57 +8,19 @@ const SliderContainer = (props) => {
         props.img()
 
     }, [])
-    const product = [
-        {
-            id: 2,
-            titl: 'Анурогнатус',
-            many:'200'
-        },
-        {
-            id: 3,
-            titl: 'Самураи',
-            many:'200'
-        },
-        {
-            id: 4,
-            titl: 'Самураи',
-            many:'200'
-        },
-        {
-            id: 5,
-            titl: 'Склеромокхлус',
-            many:'200'
-        },
-        {
-            id: 6,
-            titl: 'Крыса',
-            many:'200'
-        },
-        {
-            id: 7,
-            titl: 'Крыса',
-            many:'200'
-        },
-        {
-            id: 8,
-            titl: 'София',
-            many:'200'
-        },
-        {
-            id: 9,
-            titl: 'Цветы',
-            many:'200'
-        },
-        {
-            id: 10,
-            titl: 'Цветы',
-            many:'200'
-        }
-    ]
+   
     return (
         <div className="container-fluid p-0">
-            <Slider base_url = {props.base_url} product = {product}  descriptPosition={props.descriptPosition} descriptPositions={props.descriptPositions} slider={props.slider} />
-
+        <div className="Slider text-center">
+        {
+            props.slider.map((x) =>
+                <div className = " text-center"  key={x.id}>
+                 <div className = "img-block di"> <img src={`${props.base_url}/img/slider/${x.img}`} alt = "ssss" /></div>
+                 <div className = "descript di" ></div>
+                </div>
+            )
+        }
+    </div>
         </div>
     )
 }
@@ -67,7 +28,8 @@ const SliderContainer = (props) => {
 const setPath = state => ({
     slider: state.slider,
     descriptPosition: state.descriptPosition,
-    base_url:state.base_url
+    base_url:state.base_url,
+    winWidth:state.winWidth
 })
 
 const toProps = dispatch => ({

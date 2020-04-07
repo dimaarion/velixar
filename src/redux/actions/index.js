@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const inital_base_url = 'http://velixar.project';
+export const inital_base_url = 'http://velixar.ru';
 
 const api = axios.create({
     baseURL: inital_base_url + '/api/getdb/',
@@ -24,6 +24,7 @@ export const imgSlider = () => {
 
 export const array_obj = (arr) => {
     let new_arr = [];
+    // eslint-disable-next-line
     for (const key in arr) {
         if (arr.hasOwnProperty(key)) {
             new_arr[key] = arr[key];

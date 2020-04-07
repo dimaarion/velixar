@@ -11,7 +11,7 @@
 }
 
 .Menu ul li{
-    display: table-cell;
+    display: inline-block;
     position: relative;
     list-style: none;
     font-size: 12pt;
