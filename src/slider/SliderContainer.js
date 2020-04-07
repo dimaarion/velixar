@@ -7,7 +7,7 @@ const SliderContainer = (props) => {
     useEffect(() => {
         props.img()
 
-    }, [])
+    }, [props])
    
     return (
         <div className="container-fluid p-0">
