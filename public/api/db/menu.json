@@ -1,0 +1,34 @@
+{
+  "1": {
+    "id": "1",
+    "parent": "0",
+    "alias": "/",
+    "names": "Главная",
+    "hosts": "0",
+    "cild": []
+  },
+  "2": {
+    "id": "2",
+    "parent": "0",
+    "alias": "collection",
+    "names": "Коллекции",
+    "hosts": "0",
+    "cild": []
+  },
+  "3": {
+    "id": "3",
+    "parent": "0",
+    "alias": "blog",
+    "names": "Блог",
+    "hosts": "0",
+    "cild": []
+  },
+  "4": {
+    "id": "4",
+    "parent": "0",
+    "alias": "contact",
+    "names": "Контакты",
+    "hosts": "0",
+    "cild": []
+  }
+}

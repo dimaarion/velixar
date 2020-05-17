@@ -1,0 +1,56 @@
+[
+  {
+    "work_id": "1",
+    "work_name": "Anurognathus",
+    "work_alias": "Anurognathus",
+    "work_img": "Anurognathus.jpg"
+  },
+  {
+    "work_id": "2",
+    "work_name": "cveti",
+    "work_alias": "cveti",
+    "work_img": "cveti.jpg"
+  },
+  {
+    "work_id": "3",
+    "work_name": "cveti2",
+    "work_alias": "cveti2",
+    "work_img": "cveti2.jpg"
+  },
+  {
+    "work_id": "4",
+    "work_name": "krisa1",
+    "work_alias": "krisa1",
+    "work_img": "krisa1.jpg"
+  },
+  {
+    "work_id": "5",
+    "work_name": "krisa2",
+    "work_alias": "imkrisa2",
+    "work_img": "img\\slider\\krisa2.jpg"
+  },
+  {
+    "work_id": "6",
+    "work_name": "samurai_2-0",
+    "work_alias": "samurai_2-0",
+    "work_img": "samurai_2-0.jpg"
+  },
+  {
+    "work_id": "7",
+    "work_name": "samurai_6-0",
+    "work_alias": "samurai_6-0",
+    "work_img": "samurai_6-0.jpg"
+  },
+  {
+    "work_id": "8",
+    "work_name": "Scleromochlus",
+    "work_alias": "Scleromochlus",
+    "work_img": "Scleromochlus.jpg"
+  },
+  {
+    "work_id": "9",
+    "work_name": "sofiya",
+    "work_alias": "sofiya",
+    "work_img": "sofiya.jpg"
+  }
+]
