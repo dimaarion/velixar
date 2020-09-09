@@ -26,7 +26,10 @@ const MenuLogoContainer = (props) => {
         <div className="Logo col-sm-1 ">Velixar.ru</div>
                 <div className="Menu col-sm">
                     <ul className = "nav justify-content-end">
+<<<<<<< HEAD
                         
+=======
+>>>>>>> f32fc0c0e0130ee08e0a7e32a11b52c5ab9dc931
                         {
                             array_obj(props.menu).map((x) =>
                                 (x !== null) ?

@@ -121,6 +121,7 @@ function Slider(props) {
 				<div className="col-sm">
 					{
 						props.dataImages.map((x, i) =>
+<<<<<<< HEAD
 							<div key={x.work_id}>
 								<div className="img-container text-center" style={{ width: window.innerWidth - 370 + 'px', marginTop: '120px', transition: 0 + 's' }}>
 									<div className="img-block" >
@@ -135,6 +136,22 @@ function Slider(props) {
 												<div>
 													<h2 style={{ marginLeft: states.clLeft + 'px', transition: trans + 's', color: '#' + getRandomArbitrary(100000, 999999), zIndex: 0, position: 'relative' }} className="descript" ><div>{x.work_name}</div></h2>
 													<img style={{ marginLeft: states.clLeft + 'px', transition: trans + 's', height: window.innerHeight - 300 + 'px', zIndex: 0, position: 'relative' }} src={`${inital_base_url}/img/slider/${x.work_img}`} alt={x.work_name} />
+=======
+							<div key={x.id}>
+								<div className="img-container text-center" style={{ width: window.innerWidth - 370 + 'px', marginTop: '120px', transition: 0 + 's' }}>
+									<div className="img-block" >
+										{(states.interval === true) ?
+											(count.toString() === x.id) ?
+												<div>
+													<h2 style={{ marginLeft: left + 'px', transition: trans + 's', color: '#' + getRandomArbitrary(100000, 999999), zIndex: 0, position: 'relative' }} className="descript" ><div>{x.names}</div></h2>
+													<img style={{ marginLeft: left + 'px', transition: trans + 's', height: window.innerHeight - 300 + 'px', zIndex: 0, position: 'relative' }} src={`${inital_base_url}/img/slider/${x.img}`} alt={x.names} />
+												</div>
+												: ''
+											: (states.counter.toString() === x.id) ?
+												<div>
+													<h2 style={{ marginLeft: states.clLeft + 'px', transition: trans + 's', color: '#' + getRandomArbitrary(100000, 999999), zIndex: 0, position: 'relative' }} className="descript" ><div>{x.names}</div></h2>
+													<img style={{ marginLeft: states.clLeft + 'px', transition: trans + 's', height: window.innerHeight - 300 + 'px', zIndex: 0, position: 'relative' }} src={`${inital_base_url}/img/slider/${x.img}`} alt={x.names} />
+>>>>>>> f32fc0c0e0130ee08e0a7e32a11b52c5ab9dc931
 												</div>
 												: ''}
 									</div>
