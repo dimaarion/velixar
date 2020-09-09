@@ -1,0 +1,39 @@
+.img-container{
+    transition: 1s;
+    position: fixed;
+    overflow: hidden;
+}
+.img-block img{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.descript{
+    padding: 10px;
+    text-align: center;
+
+}
+.descript div{
+   
+    overflow: hidden;
+   
+}
+#left, #right{
+    
+    perspective: 100px;
+    
+}
+ 
+#blLeft, #blRight {
+     cursor: pointer;
+}
+
+#blLeft:hover #left{
+    transform: rotateX(360deg);
+    transition: 2s;
+   
+}
+#blRight:hover #right{
+    transform: rotateX(360deg);
+    transition: 2s;
+}
